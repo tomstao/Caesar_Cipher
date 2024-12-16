@@ -36,4 +36,12 @@ public class Test extends Cipher{
         System.out.println("Mary Bella Abracadabra, 'a' after emphasizing: " +
                 WordPlay.emphasize("Mary Bella Abracadabra", 'a'));
     }
+
+    public static void testCaesar2()
+    {
+        System.out.println(encrypt("FIRST LEGION ATTACK EAST FLANK!", 23));
+        System.out.println(encrypt("First Legion", 17));
+        System.out.println(encryptTwoKeys("First Legion", 23, 17));
+
+    }
 }

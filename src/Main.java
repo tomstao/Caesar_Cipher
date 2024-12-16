@@ -6,7 +6,9 @@ public class Main {
         //Test.testCaesar();
         //Test.testWordPlay();
         //Test.testReplaceVowels();
-        Test.testEmphasize();
+        //Test.testEmphasize();
+        Test.testCaesar2();
+
     }
 
 
