@@ -3,9 +3,10 @@ import edu.duke.FileResource;
 public class Test extends Cipher{
     public static void testCaesar()
     {
-        int key = 17;
-        FileResource fr = new FileResource();
-        String message = fr.asString();
+        int key = 15;
+        //FileResource fr = new FileResource();
+        //String message = fr.asString();
+        String message = "At noon be in the conference room with your hat on for a surprise party. YELL LOUD!";
         String encrypted = encrypt(message,key);
         System.out.println(encrypted);
         String decrypted = encrypt(encrypted,26 - key);
@@ -41,7 +42,7 @@ public class Test extends Cipher{
     {
         System.out.println(encrypt("FIRST LEGION ATTACK EAST FLANK!", 23));
         System.out.println(encrypt("First Legion", 17));
-        System.out.println(encryptTwoKeys("First Legion", 23, 17));
+        System.out.println(encryptTwoKeys("At noon be in the conference room with your hat on for a surprise party. YELL LOUD!", 8, 21));
 
     }
 }
