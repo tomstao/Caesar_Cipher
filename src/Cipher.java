@@ -7,9 +7,14 @@ public class Cipher {
         for(int i = 0; i < encrypted.length(); i++) {
             char currChar = encrypted.charAt(i);
             int idx = alphabet.indexOf(currChar);
+            int idxLower = alphabet.toLowerCase().indexOf(currChar);
             if(idx != -1)
             {
                 char newChar = shiftedAlphabet.charAt(idx);
+                encrypted.setCharAt(i,newChar);
+            } else if(idxLower != -1)
+            {
+                char newChar = Character.toLowerCase(shiftedAlphabet.charAt(idxLower));
                 encrypted.setCharAt(i,newChar);
             }
 
