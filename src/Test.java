@@ -20,4 +20,20 @@ public class Test extends Cipher{
         System.out.println("C " + WordPlay.isVowel('I'));
 
     }
+
+    public static void testReplaceVowels()
+    {
+        String message = "Hello World";
+
+        System.out.println(message + " to: " + WordPlay.replaceVowels(message,'*'));
+
+    }
+
+    public static void testEmphasize()
+    {
+        System.out.println("“dna ctgaaactga”, ‘a’ after emphasizing: "
+        + WordPlay.emphasize("dna ctgaaactga", 'a'));
+        System.out.println("Mary Bella Abracadabra, 'a' after emphasizing: " +
+                WordPlay.emphasize("Mary Bella Abracadabra", 'a'));
+    }
 }
