@@ -45,4 +45,11 @@ public class Test extends Cipher{
         System.out.println(encryptTwoKeys("At noon be in the conference room with your hat on for a surprise party. YELL LOUD!", 8, 21));
 
     }
+
+    public static void testDice()
+    {
+        int roll = 100000;
+        RollingDices.simulate(roll);
+
+    }
 }
