@@ -11,7 +11,8 @@ public class Main {
         // Test.testCaesar2();
         //Test.testDice();
         //Test.testCountShakespeare();
-        Test.testCountWordLength();
+        //Test.testCountWordLength();
+        Test.testTwoKeysDecrypt();
 
     }
 

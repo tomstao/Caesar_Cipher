@@ -27,18 +27,15 @@ public class Cipher {
     public static String encryptTwoKeys(String input, int key, int key2) {
         StringBuilder encrypted = new StringBuilder(input);
         for(int i = 0; i < input.length(); i++) {
+            char currChar = input.charAt(i);
+            String Char = Character.toString(currChar);
             if(i % 2 == 0)
             {
-                char currChar = input.charAt(i);
-                String Char = Character.toString(currChar);
                 Char = encrypt(Char, key);
-                encrypted.setCharAt(i, Char.charAt(0));
             } else {
-                char currChar = input.charAt(i);
-                String Char = Character.toString(currChar);
                 Char = encrypt(Char, key2);
-                encrypted.setCharAt(i, Char.charAt(0));
             }
+            encrypted.setCharAt(i, Char.charAt(0));
 
         }
 

@@ -67,4 +67,12 @@ public class Test extends Cipher{
             System.out.println("Word length " + i + " has " + counts[i] + " characters.");
         }
     }
+
+    public static void testTwoKeysDecrypt()
+    {
+        FileResource fr = new FileResource("ProgrammingBreakingCaesarData/wordsLotsOfEsEncrypted.txt");
+
+        System.out.println(CaesarBreaker.twoKeysDecrypt(fr.asString()));
+    }
+
 }
