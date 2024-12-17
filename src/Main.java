@@ -9,7 +9,8 @@ public class Main {
         //Test.testEmphasize();
         //
         // Test.testCaesar2();
-        Test.testDice();
+        //Test.testDice();
+        Test.testCountShakespeare();
 
     }
 

@@ -52,4 +52,8 @@ public class Test extends Cipher{
         RollingDices.simulate(roll);
 
     }
+
+    public static void testCountShakespeare(){
+        CommonWords.countShakespeare();
+    }
 }
