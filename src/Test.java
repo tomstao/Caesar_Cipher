@@ -56,4 +56,15 @@ public class Test extends Cipher{
     public static void testCountShakespeare(){
         CommonWords.countShakespeare();
     }
+
+    public static void testCountWordLength()
+    {
+        FileResource fr = new FileResource("CommonWordsData/smallhamlet.txt");
+        int[] counts = new int[30];
+        WordLength.countWordLength(fr,counts);
+        for(int i = 1;i<counts.length;i++)
+        {
+            System.out.println("Word length " + i + " has " + counts[i] + " characters.");
+        }
+    }
 }

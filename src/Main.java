@@ -10,7 +10,8 @@ public class Main {
         //
         // Test.testCaesar2();
         //Test.testDice();
-        Test.testCountShakespeare();
+        //Test.testCountShakespeare();
+        Test.testCountWordLength();
 
     }
 
